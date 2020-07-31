@@ -1,0 +1,17 @@
+@keyframes changeLetter {
+    0% {
+        content: "Keiran";
+    }
+    50% {
+        content: "Blah";
+    }
+    100% {
+        content: "Jim";
+    }
+}
+
+.ScrollingSuffix:after {
+    -webkit-animation: changeLetter 3s linear infinite alternate;
+    animation: changeLetter 3s linear infinite alternate;
+    content: "Jim";
+}
